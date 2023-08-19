@@ -3,9 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Rock Paper Scissors</title>
-    <script src="javascript.js"></script>
+    <script src="javascript.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1 class="pageHeader">Rock, Paper, Scissors</h1>
+    <p class="pageSubHeader">Click a button below to choose your play</p>
     
+    <label for="roundSelect">How many rounds?</label>
+    <select name="roundSelect" id="roundSelect">
+        <option value="1" selected ="selected">One Round</option>
+        <option value="3">Best of three</option>
+        <option value="5">Best of five</option>
+    </select>
+    
+    <div id="buttons">
+        <button id="rockButton">Rock</button>
+        <button id="paperButton">Paper</button>
+        <button id="scissorsButton">Scissors</button>
+    </div>
+
+    <div class="scoreboard"><h3>The current score is: </h3>
+        <div class="scoreCont"><p>Your score:</p></div>
+            <div id="playerScore"></div>
+        <div class="scoreCont"><p>Computer score:</p></div>
+            <div id="computerScore"></div>
+        <div class="choiceCont"><p>You chose:</p></div>
+            <div id="playerChoiceCont"></div>
+        <div class="choiceCont"><p>Computer chose:</p></div>
+            <div id="computerChoiceCont"></div>
+    </div>
+
+    <div id="resultDisplay"></div>
 </body>
 </html>
