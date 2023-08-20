@@ -13,41 +13,57 @@
             <h1 class="pageHeader">Rock, Paper, Scissors</h1>
             <h2 class="pageSubHeader">Click a button below to choose your play</h2>
         </div>
-
-        <div class="selecterCont">
-            <label for="roundSelect">How many rounds?</label>
-            <select name="roundSelect" id="roundSelect">
-                <option value="1" selected ="selected">One Round</option>
-                <option value="3">Best of three</option>
-                <option value="5">Best of five</option>
-            </select>
-        </div>
         
-        <div class="startCont">
-            <button id="start">Start</button>
-        </div>
+        <div class="pageCenter">
+            <div id="selecterCont">
+                <label for="roundSelect">How many rounds?</label>
+                <select name="roundSelect" id="roundSelect">
+                    <option value="1" selected ="selected">One Round</option>
+                    <option value="3">Best of three</option>
+                    <option value="5">Best of five</option>
+                </select>
+            </div>
+        
+            <div class="pageCenterCenter">
+                <div id="startCont">
+                    <button id="start">Start</button>
+                </div>
+            
+                <div class="resultCont">
+                    <div class="resultTop"><p></p></div>
+                    <div class="resultDisplay"></div>
+                    <div class="resultBottom"><p></p></div>
+                </div>
 
-        <div class="buttonCont">
-            <button id="rockButton">Rock</button>
-            <button id="paperButton">Paper</button>
-            <button id="scissorsButton">Scissors</button>
-        </div>
-
-        <div class="scoreboardCont">
-            <div class="scoreboard"><h3>The current score is: </h3>
-                <div class="scoreCont"><p>Your score:</p></div>
-                    <div id="playerScore">0</div>
-                <div class="scoreCont"><p>Computer score:</p></div>
-                    <div id="computerScore">0</div>
-                <div class="choiceCont"><p>You chose:</p></div>
-                    <div id="playerChoiceCont">x</div>
-                <div class="choiceCont"><p>Computer chose:</p></div>
-                    <div id="computerChoiceCont">x</div>
+                <div class="buttonCont">
+                    <button id="rockButton" class="playButton">Rock</button>
+                    <button id="paperButton" class="playButton">Paper</button>
+                    <button id="scissorsButton" class="playButton">Scissors</button>
+                </div>
             </div>
 
+            <div class="scoreboardCont">
+                
+                <div class="scoreboardHeader"><h3>SCOREBOARD</h3></div>
+                
+                <div class="scoreboard">
+                    <div class="scoreRight">
+                        <div class="scoreCont">Your score:</div>
+                            <div id="playerScore">0</div>
+                        <div class="choiceCont">You chose:</div>
+                            <div id="playerChoiceCont">x</div>
+                    </div>
+
+                    <div class="scoreLeft">
+                        <div class="scoreCont">Computer score:</div>
+                            <div id="computerScore">0</div>
+                        <div class="choiceCont">Computer chose:</div>
+                            <div id="computerChoiceCont">x</div>
+                    </div>
+                </div>
+            </div>
         </div>
         
-        <div class="resultDisplay"></div>
 
         <div class="footerCont">
             <div><a href="https://github.com/hhofent/odin-rock-paper">don't click this</a></div>

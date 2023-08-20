@@ -1,11 +1,10 @@
 html {
-    background: no-repeat center url(./background.jpg);
+    background: no-repeat center #fff url(./background.jpg);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 100%;
-    background-color: #d6e1ff;
-    color: #00103d;
 }
-body{
+
+body {
     height: 100vh;
     width: 100vw;
     margin: 0;
@@ -18,14 +17,155 @@ body{
 }
 
 .headerCont {
-    background-color: #2e568a;
+    background-color: #369;
     color: #dfe8f6;
     text-align: center;
 }
 
-.footerCont{
-    background-color: #ab3672;
+.pageHeader {
+    margin: 10px;
+    font-size: 3em;
+}
+
+.pageSubHeader {
+    margin: 5px;
+}
+
+.pageCenter {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#selecterCont {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border: 8px solid #936;
+    padding: 10px;
+    background-color: #369;
+    color: #dfe8f6;
+    margin: 0;
+    opacity: 1;
+}
+
+
+
+.pageCenterCenter {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#startCont {
+    text-align: center;
+    justify-content: flex-start;
+    opacity: 1;
+}
+
+button#start {
+    background-color: #369;
+    color: #dfe8f6;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 8px 20px;
+    border: 8px solid #936;
+    border-top: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.shownCont {
+    display: flex;
+    flex-direction: column;
+}
+
+.shownTop {
+    background-color: #936;
+    height: 100px;
+}
+
+.shownDisplay {
+    padding: 5px;
+    text-align: center;
+    font-size: 4em;
+    font-weight: 900;
+}
+.resultDisplay{
+
+}
+
+.shownBottom {
+    background-color: #369;
+    height: 100px;
+}
+
+.buttonCont {
+    display: flex;
+    justify-content: center;
+}
+
+
+button.playButton {
+    background-color: #936;
     color: #eecef3;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 8px 20px;
+    border: 8px solid #369;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.scoreboardCont {
+    color: #eecef3;
+    background-color: #936;
+    border: 8px solid #369;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scoreboardHeader {
+    font-weight: bold;
+    font-size: larger;
+    text-decoration: underline;
+    margin: 0;
+}
+
+.scoreboard {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.scoreRight {
+    border: 2px solid #eecef3;
+    border-radius: 10px;
+    padding: 5px 10px;
+    width: 8em;
+    text-align: center;
+}
+
+.scoreLeft {
+    border: 2px solid #eecef3;
+    border-radius: 10px;
+    padding: 5px 10px;
+    width: 8em;
+    text-align: center;
+}
+
+.footerCont{
+    background-color: #936;
+    color: #eecef3;
+    text-align: center;
+    padding: 10px;
 }
 
 a:link {
@@ -37,3 +177,4 @@ a:visited {
     color: #eecef3;
     text-decoration: none;
 }
+
